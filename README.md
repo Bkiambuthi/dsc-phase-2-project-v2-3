@@ -9,7 +9,7 @@ We will walk you through each step of the process of developing and assessing ou
 
 
 ### Business Problem
-The management of a startup real estate company seeks to understand the key factors influencing housing prices in King County.Their capacity to develop focused actions and activities to support housing affordability and fair access to housing is limited by a lack of data-driven insights.
+The management of a startup real estate company seeks to understand the key factors influencing housing prices in King County. Their capacity to develop focused actions and activities to support housing affordability and fair access to housing is limited by a lack of data-driven insights.
 
 ### The Data
 
@@ -17,9 +17,81 @@ This project uses the King County House Sales dataset, which can be found in  `k
 
 
 ### Project Goals
+The project aims to use CRISP-DM data science methodology to fit and select the best regression model that will predict housing prices. The resultant model will be used by the real estate company to price housing units so as to attract customers and optimize their sales.
+
+### Methods
+Linear regression analysis will be used to find the relationship between sales prices and various house features other factors.
+
 ![image](https://github.com/Bkiambuthi/dsc-phase-2-project-v2-3/assets/151352438/8cafe8af-4b2b-4644-b6e1-02d5fb3f20ca)
 
-The project aims to use CRISP-DM datascience methodology to fit and select the best regression model that will predict the housing prices.The resultant model will be used by the real estate company to price housing units inorder to attract customers and optimize their sales.
+### Results
+When using linear regression there are four assumptions that need to be followed:
+
+      .Linearity - relationship between predictor and target should be linear.
+
+      .Independence - Observations are independent from each other, low or no multicollinearity.
+
+      .Normality - Errors should be normally distributed.
+
+      .Homoscedasticity - variance or the errors is the same.
+
+1.Checking the relationships amongst all the variables in our data set
+
+<img width="579" alt="image" src="https://github.com/Bkiambuthi/dsc-phase-2-project-v2-3/assets/151786633/4521570b-0ca8-4ea9-a236-ddb596d6eb2c">
+
+2. Fitting our baseline model using sqft_living as the independent variable and price as the dependent variable.
+Sqft_living has the highest correlation with price.
+
+<img width="294" alt="image" src="https://github.com/Bkiambuthi/dsc-phase-2-project-v2-3/assets/151786633/51669624-a8c0-4b39-ab0f-a5ae47c9cf84">
+
+The model is explaining 49.3% of the change in price.
+
+Equation for our model Price = 280.86X - 43988.89
+
+<img width="431" alt="image" src="https://github.com/Bkiambuthi/dsc-phase-2-project-v2-3/assets/151786633/5dc87bb1-d1ab-4460-bf2c-d9d1283b86c1">
+
+<img width="437" alt="image" src="https://github.com/Bkiambuthi/dsc-phase-2-project-v2-3/assets/151786633/0c36eef8-132d-41d2-8ec5-203ed3916e45">
+
+3. Multiple linear regression
+ <img width="269" alt="image" src="https://github.com/Bkiambuthi/dsc-phase-2-project-v2-3/assets/151786633/4a1345d5-d76b-4656-b521-771064ec43f7">
+ 
+ The model is explaining 64% of the change in price.
+
+ <img width="577" alt="image" src="https://github.com/Bkiambuthi/dsc-phase-2-project-v2-3/assets/151786633/b450f7ef-0307-41dd-99be-1bd44deb8d68">
+
+ 4. Polynomial regression
+Using 3-degree polynomial regression, the model yielded the highest score.
+The results were as below:
+
+      Mean Squared Error (MSE)  192833.78
+
+      R-squared (training)  0.738
+
+      R-squared (testing)  0.731
+
+### Conclusion
+
+Square footage of living space in the home is the highest determinant in house pricing.
+
+The other factors included
+
+Construction and design of the house
+
+Number of floors
+
+Number of bedrooms
+
+Quality of view from house
+
+Location
+
+### For More Information
+Please review our full analysis in our Jupyter Notebook or our presentation.
+
+
+
+   
+
 
 
 
