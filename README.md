@@ -86,7 +86,7 @@ Quality of view from house
 Location
 
 ### For More Information
-Please review our full analysis in our [Jupyter Notebook](https://github.com/Bkiambuthi/dsc-phase-2-project-v2-3/blob/main/student.ipynb) or our [presentation](https://github.com/Bkiambuthi/dsc-phase-2-project-v2-3/blob/main/Presentation.pdf).
+Please review our full analysis in our [Jupyter Notebook](https://github.com/Bkiambuthi/dsc-phase-2-project-v2-3/blob/main/notebook.ipynb) or our [presentation](https://github.com/Bkiambuthi/dsc-phase-2-project-v2-3/blob/main/Presentation.pdf).
 
 
 
